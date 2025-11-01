@@ -3,7 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # GitHub의 Actions 탭에서 이 워크플로를 수동으로 실행할 수 있습니다.
   workflow_dispatch:
 
 permissions:
@@ -19,6 +18,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v3
+        with:
+          package-manager: "pnpm@latest"
 
   deploy:
     needs: build
