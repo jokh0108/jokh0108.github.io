@@ -82,12 +82,12 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
             onSearchInput={onSearchInput}
             query={query}
             setQuery={setQuery}
-            placeholderText={`Search ${entry_name}`}
+            placeholderText={`${entry_name} 검색`}
           />
           {/* Tag Filters */}
           <div class="relative flex flex-row justify-between w-full">
             <p class="text-sm font-semibold uppercase my-4 text-black dark:text-white">
-              Tags
+              태그
             </p>
             {filter().size > 0 && (
               <button
@@ -146,14 +146,14 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
           {/* Info Bar */}
           <div class="flex justify-between flex-row mb-2">
             <div class="text-sm uppercase">
-              SHOWING {collection().length} OF {data.length} {entry_name}
+              {data.length}개 중 {collection().length}개 표시 중
             </div>
             <button
               onClick={toggleDescending}
               class="flex flex-row gap-1 stroke-neutral-400 dark:stroke-neutral-500 hover:stroke-neutral-600 hover:dark:stroke-neutral-300 text-neutral-400 dark:text-neutral-500 hover:text-neutral-600 hover:dark:text-neutral-300"
             >
               <div class="text-sm uppercase">
-                {descending() ? "DESCENDING" : "ASCENDING"}
+                {descending() ? "내림차순" : "오름차순"}
               </div>
               <svg class="size-5 left-2 top-[0.45rem]">
                 <use

@@ -3,15 +3,14 @@ import type { Site, Page, Links, Socials } from "@types";
 // Global
 export const SITE: Site = {
   TITLE: "참참다랑어의 블로그",
-  DESCRIPTION:
-    "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
+  DESCRIPTION: "디자이너와 개발자를 위한 포트폴리오와 블로그",
   AUTHOR: "Kyungho Jo",
 };
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
+  TITLE: "경력",
+  DESCRIPTION: "제가 근무했던 곳들",
 };
 
 // Blog Page
@@ -22,14 +21,14 @@ export const BLOG: Page = {
 
 // Projects Page
 export const PROJECTS: Page = {
-  TITLE: "Projects",
-  DESCRIPTION: "Recent projects I have worked on.",
+  TITLE: "프로젝트",
+  DESCRIPTION: "최근 작업한 프로젝트들",
 };
 
 // Search Page
 export const SEARCH: Page = {
-  TITLE: "Search",
-  DESCRIPTION: "Search all posts and projects by keyword.",
+  TITLE: "검색",
+  DESCRIPTION: "키워드로 모든 포스트와 프로젝트 검색",
 };
 
 // Links

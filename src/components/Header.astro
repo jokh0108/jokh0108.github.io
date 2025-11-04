@@ -50,7 +50,7 @@ import Container from "@components/Container.astro";
       <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
         <a
           href="/search"
-          aria-label={`Search blog posts and projects on ${SITE.TITLE}`}
+          aria-label={`${SITE.TITLE}에서 블로그 포스트와 프로젝트 검색`}
           class={cn(
             "hidden md:flex",
             "size-9 rounded-full p-2 items-center justify-center",
@@ -71,7 +71,7 @@ import Container from "@components/Container.astro";
         <!-- <a
           href="/rss.xml"
           target="_blank"
-          aria-label={`Rss feed for ${SITE.TITLE}`}
+          aria-label={`${SITE.TITLE} RSS 피드`}
           class={cn(
             "hidden md:flex",
             "size-9 rounded-full p-2 items-center justify-center",
@@ -88,7 +88,7 @@ import Container from "@components/Container.astro";
 
         <button
           id="header-theme-button"
-          aria-label={`Toggle light and dark theme`}
+          aria-label={`라이트/다크 모드 전환`}
           class={cn(
             "hidden md:flex",
             "size-9 rounded-full p-2 items-center justify-center",
@@ -108,7 +108,7 @@ import Container from "@components/Container.astro";
 
         <button
           id="header-drawer-button"
-          aria-label={`Toggle drawer open and closed`}
+          aria-label={`드로어 열기/닫기`}
           class={cn(
             "flex md:hidden",
             "size-9 rounded-full p-2 items-center justify-center",

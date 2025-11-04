@@ -33,7 +33,7 @@ const subpath = pathname.match(/[^/]+/g);
   <div class="flex gap-1 mt-5">
     <a
       href="/search"
-      aria-label={`Search blog posts and projects on ${SITE.TITLE}`}
+      aria-label={`${SITE.TITLE}에서 블로그 포스트와 프로젝트 검색`}
       class={cn(
         "size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out",
         pathname === "/search" || "/" + subpath?.[0] === "search"
@@ -49,7 +49,7 @@ const subpath = pathname.match(/[^/]+/g);
     <a
       href="/rss.xml"
       target="_blank"
-      aria-label={`Rss feed for ${SITE.TITLE}`}
+      aria-label={`${SITE.TITLE} RSS 피드`}
       class="size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out"
     >
       <svg class="size-full">
@@ -59,7 +59,7 @@ const subpath = pathname.match(/[^/]+/g);
 
     <button
       id="drawer-theme-button"
-      aria-label={`Toggle light and dark theme`}
+      aria-label={`라이트/다크 모드 전환`}
       class="size-9 rounded-full p-2 items-center justify-center bg-transparent hover:bg-black/5 dark:hover:bg-white/20 stroke-current hover:stroke-black hover:dark:stroke-white border border-black/10 dark:border-white/25 transition-colors duration-300 ease-in-out"
     >
       <svg class="block dark:hidden size-full">

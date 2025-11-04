@@ -16,7 +16,7 @@ export default function ArrowCard({ entry, pill }: Props) {
         <div class="flex flex-wrap items-center gap-2">
           {pill && (
             <div class="text-sm capitalize px-2 py-0.5 rounded-full border border-black/15 dark:border-white/25">
-              {entry.collection === "blog" ? "post" : "project"}
+              {entry.collection === "blog" ? "포스트" : "프로젝트"}
             </div>
           )}
           <div class="text-sm uppercase">{formatDate(entry.data.date)}</div>
