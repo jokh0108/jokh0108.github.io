@@ -12,10 +12,10 @@ const posts = (await getCollection("blog"))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0,3)
 
-const projects = (await getCollection("projects"))
-  .filter(project => !project.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0,3)
+// const projects = (await getCollection("projects"))
+//   .filter(project => !project.data.draft)
+//   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+//   .slice(0,3)
 
 const stack = [
   { 
@@ -67,8 +67,11 @@ const stack = [
 
   <script is:inline src="/js/bg.js"></script>
   
+
+  <use href={`/ui.svg#square`} />
   <!-- HERO -->
-  <section class="relative h-screen w-full">
+   
+  <!-- <section class="relative h-screen w-full">
     <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
       <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
         <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
@@ -92,27 +95,25 @@ const stack = [
             <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               Read my blog
             </a>
-            <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              View my work
-            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <div class="relative bg-white dark:bg-black">
-    <div class="mx-auto max-w-screen-sm p-5 space-y-24 pb-16">
+  <div class="relative w-full bg-white dark:bg-black">
+    <div class="mx-auto max-w-screen-sm p-5 space-y-12 py-16">
+
+      <section class="animate mx-auto w-1/2 bg-yellow-50">
+        <img src="/brand.png" >
+      </section>
 
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>I am a <b><i>software engineer</i></b>, <b><i>ui/ux designer</i></b>, <b><i>product planner</i></b>, <b><i>mentor</i></b>, <b><i>student</i></b>, <b><i>minimalist</i></b>, <b><i>eternal optimist</i></b>, <b><i>crypto enthusiast</i></b> and <b><i>sarcasm connoisseur</i></b>.</p>
-          <p>I love to both build and break things. I am motivated by challenging projects with self-guided research and dynamic problem solving. My true passion is crafting creative front end designs with unique takes on color, typography and motion.</p>
-          <p>During my career</p>
-          <p>I have built products ranging from marketing and ecommerce websites to complex enterprise apps with focus on delivering fast, elegant code along with delightful user interfaces.</p>
-          <p>Now</p>
-          <p>I currently work as a software engineer at StreamlineFS, where I do product planning, design and development.</p>
+          <p>안녕하세요. 저는 프론트엔드에 주로 관심을 갖고 있는 소프트웨어 엔지니어입니다.</p>
+          <p>매일매일 보고 배운 것들을 다시 기록하고 정리하고 재창조하는 과정에서 더 성장할 수 있다는 생각으로 블로그를 시작했습니다. 또한 공유와 소통을 함으로써 더 깊이 있게 이해할 수 있을 것이라고 믿습니다.</p>
+          <p>저는 세상의 많은 것들을 배우고 싶은 사람이기 때문에 이 블로그에는 소프트웨어뿐만 아니라 다양한 주제의 글들을 작성하려고 합니다.</p>
         </article>
       </section>
 
@@ -121,11 +122,11 @@ const stack = [
         <div class="space-y-4">
           <div class="flex justify-between">
             <p class="font-semibold text-black dark:text-white">
-              Recent posts
+              최근 글 모음
             </p>
             <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                All posts
+                전체 보기
               </span>
             </a>
           </div>
@@ -140,7 +141,7 @@ const stack = [
       </section>
 
       <!-- Tech Stack Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <div class="space-y-4">
           <p class="font-semibold text-black dark:text-white">
             Website build with
@@ -163,10 +164,10 @@ const stack = [
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Project Preview Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
             <p class="font-semibold text-black dark:text-white">
@@ -186,16 +187,13 @@ const stack = [
             ))}
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Contact Section -->
       <section class="animate">
         <div>
           <p class="font-semibold text-black dark:text-white">
-            Let's Connect
-          </p>
-          <p>
-            Reach out to me via email or on social media.
+            Connect
           </p>
           <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
             {SOCIALS.map(social => (
