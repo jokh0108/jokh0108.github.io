@@ -1,5 +1,6 @@
 # build output
 dist/
+
 # generated types
 .astro/
 
@@ -12,27 +13,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-
 # environment variables
 .env
 .env.production
 
 # macOS-specific files
 .DS_Store
-
-# jetbrains setting folder
-.idea/
-# to exclude Obsidian's settings (including plugin and hotkey configurations)
-.obsidian/
-
-# to only exclude plugin configuration. Might be useful to prevent some plugin from exposing sensitive data
-.obsidian/plugins
-
-# OR only to exclude workspace cache
-.obsidian/workspace.json
-
-# to exclude workspace cache specific to mobile devices
-.obsidian/workspace-mobile.json
-
-# Add below lines to exclude OS settings and caches
-.trash/
