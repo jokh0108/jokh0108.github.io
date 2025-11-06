@@ -11,10 +11,14 @@
             "id": "f967d2bbf7ee5fa6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "blog/01-set-sitemap/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ]
@@ -143,8 +147,19 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "bce3cbc95f13a871",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -153,22 +168,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-importer:Open Importer": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "f967d2bbf7ee5fa6",
+  "active": "96645286109c7ec7",
   "lastOpenFiles": [
-    "config.ts",
     "4-archives/index.md",
-    "3-resources/index.md",
-    "2-area/index.md",
+    "Untitled.md",
     "1-projects/index.md",
+    "2-area/index.md",
+    "blog/01-set-sitemap/index.md",
+    "config.ts",
+    "3-resources/index.md",
     "3-resources/useMemo를 쓰지 않으면 문제가 되는 상황.md",
     "3-resources/Untitled.md",
     "3-resources/session이라는건 왜 도입된 개념일까.md",
@@ -190,7 +213,6 @@
     "3-resources/비즈니스 앱 공통 분모 플랜.md",
     "3-resources/멀티플랫폼 SaaS 스택 가이드.md",
     "3-resources/내 원티드 이력서.md",
-    "3-resources/내 원티드 이력서 2.md",
     "3-resources/languages/프랑스어",
     "3-resources/languages/태국어",
     "3-resources/languages/영어",
@@ -198,7 +220,6 @@
     "3-resources/languages/중국어",
     "3-resources/languages/스페인어",
     "3-resources/languages/일본어",
-    "3-resources/languages/러시아어",
-    "3-resources/languages/공통"
+    "3-resources/languages/러시아어"
   ]
 }
