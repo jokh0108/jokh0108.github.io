@@ -1,0 +1,309 @@
+{
+  "main": {
+    "id": "0deb9477bcf166f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "16974507181c0a84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7cf7f0a0d6523f2a",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
+            }
+          },
+          {
+            "id": "05e82acddff2847c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev/프로젝트 구상/모노레포로 여러 앱 배포하기.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "모노레포로 여러 앱 배포하기"
+            }
+          },
+          {
+            "id": "f77f0568e080db80",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dev/vite 프로젝트 개발하고 배포하는 원리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "vite 프로젝트 개발하고 배포하는 원리"
+            }
+          },
+          {
+            "id": "7180ed3b66af58b0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "토스증권 프론트엔드 과제 및 면접 요약.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "토스증권 프론트엔드 과제 및 면접 요약"
+            }
+          },
+          {
+            "id": "f7ff93b16835433e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "토스증권 프론트엔드 과제 및 면접 요약.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "토스증권 프론트엔드 과제 및 면접 요약"
+            }
+          },
+          {
+            "id": "c01d3278448799a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "useMemo를 쓰지 않으면 문제가 되는 상황.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "useMemo를 쓰지 않으면 문제가 되는 상황"
+            }
+          },
+          {
+            "id": "8c1417d9acf14f87",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "useMemo를 쓰지 않으면 문제가 되는 상황.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "useMemo를 쓰지 않으면 문제가 되는 상황"
+            }
+          },
+          {
+            "id": "27f97f617edc628b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "토스증권 프론트엔드 과제 및 면접 요약.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "토스증권 프론트엔드 과제 및 면접 요약"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ef659c050cd99718",
+    "type": "split",
+    "children": [
+      {
+        "id": "737a8fbd42792c79",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1077c050eedbfd20",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "b31d9b719d2d2d07",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "a6889ac169678ade",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 203.50043487548828
+  },
+  "right": {
+    "id": "bf2ab9a8b0f214eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e6548705c487730",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1dfd9f68ce1d12b9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "useMemo를 쓰지 않으면 문제가 되는 상황.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "useMemo를 쓰지 않으면 문제가 되는 상황 의 백링크"
+            }
+          },
+          {
+            "id": "90a27568cceaed00",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dev/프로젝트 구상/모노레포로 여러 앱 배포하기.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "모노레포로 여러 앱 배포하기 의 나가는 링크"
+            }
+          },
+          {
+            "id": "1c6c48d40046a4ef",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "1b14d70eb09f1331",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dev/프로젝트 구상/모노레포로 여러 앱 배포하기.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "모노레포로 여러 앱 배포하기 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-importer:Open Importer": false
+    }
+  },
+  "active": "27f97f617edc628b",
+  "lastOpenFiles": [
+    "내 원티드 이력서.md",
+    "할일.md",
+    "토스증권 프론트엔드 개발자 공고 기반 질문.md",
+    "직접 구현 vs. 라이브러리 쓰는이유?.md",
+    "languages/스페인어/2025-09-07_스페인어_01.md",
+    "languages/러시아어/2025-09-07_러시아어_01.md",
+    "languages/아랍어/2025-09-07_아랍어_01.md",
+    "languages/일본어/2025-09-07_일본어_01.md",
+    "languages/중국어/2025-09-07_중국어_01.md",
+    "languages/태국어/2025-09-07_태국어_01.md",
+    "languages/프랑스어/2025-09-07_프랑스어_01.md",
+    "CLAUDE.md",
+    "languages/영어/2025-09-07_영어_01.md",
+    "languages/독일어/2025-09-07_독일어_01.md",
+    "languages/공통/10분_언어학습_템플릿.md",
+    "languages/공통/주간_학습_계획_템플릿.md",
+    "languages/독일어/2024-01-15_독일어_첫수업_업데이트.md",
+    "languages/독일어/2024-01-15_독일어_첫수업.md",
+    "languages/독일어/2024-01-16_독일어_두번째수업.md",
+    "languages/공통/빠른_참조_명령어.md",
+    "languages/공통/빠른_복습_템플릿.md",
+    "languages/공통/AI_명령어_가이드.md",
+    "languages/공통/README.md",
+    "비즈니스 앱 공통 분모 플랜.md",
+    "languages/공통",
+    "languages/태국어",
+    "languages/러시아어",
+    "languages/아랍어",
+    "languages/독일어",
+    "languages/프랑스어",
+    "languages/스페인어",
+    "languages/중국어",
+    "languages/일본어",
+    "languages/영어",
+    "session이라는건 왜 도입된 개념일까.md",
+    "멀티플랫폼 SaaS 스택 가이드.md",
+    "무제.canvas",
+    "무제 1.canvas"
+  ]
+}

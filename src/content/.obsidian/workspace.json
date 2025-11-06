@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "e952ed7c2e45b378",
+    "type": "split",
+    "children": [
+      {
+        "id": "a41f02acc562f929",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f967d2bbf7ee5fa6",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3fbcd9ea51da2ccd",
+    "type": "split",
+    "children": [
+      {
+        "id": "89d3c5e206d32aab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96645286109c7ec7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "fe1441a0aa64f3ee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b2477cb415cd73df",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c5566b42a52a5848",
+    "type": "split",
+    "children": [
+      {
+        "id": "70ea9c43835564b8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1350904b1fbed8b2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "58a2141db4055f27",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "7735abd3881d7b68",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "29b2200d0d637eb3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "f967d2bbf7ee5fa6",
+  "lastOpenFiles": [
+    "config.ts",
+    "4-archives/index.md",
+    "3-resources/index.md",
+    "2-area/index.md",
+    "1-projects/index.md",
+    "3-resources/useMemo를 쓰지 않으면 문제가 되는 상황.md",
+    "3-resources/Untitled.md",
+    "3-resources/session이라는건 왜 도입된 개념일까.md",
+    "3-resources/Security Scheme 스웨거 UI 비교.md",
+    "3-resources/HTTP와 하이퍼텍스트의 이해.md",
+    "3-resources/config.ts",
+    "3-resources/CLAUDE.md",
+    "3-resources/할일.md",
+    "3-resources/프론트엔드_아키텍처_심층분석.md",
+    "3-resources/프론트엔드 개발자에게 가장 중요한 역량은?.md",
+    "3-resources/토스증권 프론트엔드 과제 및 면접 요약.md",
+    "3-resources/토스증권 프론트엔드 개발자 공고 기반 질문.md",
+    "3-resources/토스 모닥불 요약.md",
+    "3-resources/직접 구현 vs. 라이브러리 쓰는이유?.md",
+    "3-resources/제어 컴포넌트 vs. 비제어 컴포넌트.md",
+    "3-resources/웹_보안_심층분석.md",
+    "3-resources/옵시디언 마크다운 문법.md",
+    "3-resources/실험1.md",
+    "3-resources/비즈니스 앱 공통 분모 플랜.md",
+    "3-resources/멀티플랫폼 SaaS 스택 가이드.md",
+    "3-resources/내 원티드 이력서.md",
+    "3-resources/내 원티드 이력서 2.md",
+    "3-resources/languages/프랑스어",
+    "3-resources/languages/태국어",
+    "3-resources/languages/영어",
+    "3-resources/languages/아랍어",
+    "3-resources/languages/중국어",
+    "3-resources/languages/스페인어",
+    "3-resources/languages/일본어",
+    "3-resources/languages/러시아어",
+    "3-resources/languages/공통"
+  ]
+}
