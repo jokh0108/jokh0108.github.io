@@ -5,8 +5,6 @@ date: 2025-11-24
 draft: false
 tags:
   - Blog
-  - Astro
-  - Sitemap
 ---
 
 블로그를 시작한 이유를 언제든지 상기하고자 이유를 남깁니다.
