@@ -19,3 +19,9 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+# Content directories
+src/content/1-projects/
+src/content/2-area/
+src/content/3-resources/
+src/content/4-archives/
