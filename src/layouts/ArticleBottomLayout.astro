@@ -1,12 +1,14 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
+import Giscus from "@components/Giscus.astro";
 
 type Props = {
   entry: CollectionEntry<"blog"> | CollectionEntry<"projects">;
+  showComments?: boolean;
 };
 
 // Get the requested entry
-const { entry } = Astro.props;
+const { entry, showComments = true } = Astro.props;
 const { collection } = entry;
 const { Content } = await entry.render();
 
@@ -23,9 +25,16 @@ const next = items[(index + 1) % items.length];
   <article>
     <Content />
   </article>
+
+  {showComments && (
+    <div class="mt-12 pt-8 border-t border-black/10 dark:border-white/10">
+      <Giscus />
+    </div>
+  )}
+
   {
     items.length > 1 && (
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
         <a
           href={`/${prev.collection}/${prev.slug}`}
           class="group p-4 gap-3 flex items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 blend"
