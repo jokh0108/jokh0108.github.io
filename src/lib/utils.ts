@@ -18,6 +18,16 @@ export function formatDate(date: Date) {
   return formatter.format(date);
 }
 
+export function formatDateOnly(date: Date) {
+  const formatter = new Intl.DateTimeFormat("ko-KR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    weekday: "long",
+  });
+  return formatter.format(date);
+}
+
 export function readingTime(html: string) {
   const textOnly = html.replace(/<[^>]+>/g, "");
   const wordCount = textOnly.split(/\s+/).length;
