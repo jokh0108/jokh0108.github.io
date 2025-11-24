@@ -11,6 +11,8 @@ export function formatDate(date: Date) {
     month: "long",
     day: "numeric",
     weekday: "long",
+    hour: "numeric",
+    minute: "numeric",
     hour12: true,
   });
   return formatter.format(date);
