@@ -70,6 +70,11 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
     if (wrapper) {
       wrapper.style.minHeight = "unset";
     }
+
+    const hash = window.location.hash.slice(1);
+    if (hash && tags.includes(decodeURIComponent(hash))) {
+      setFilter(new Set([decodeURIComponent(hash)]));
+    }
   });
 
   return (

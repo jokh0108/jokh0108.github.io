@@ -68,6 +68,21 @@ const repoUrl = collection === "projects" ? data.repoUrl : null;
   <div class="mt-1">
     {summary}
   </div>
+
+  <ul class="flex flex-wrap mt-2 gap-1">
+    {
+      entry.data.tags.map((tag: string) => (
+        <li>
+          <a
+            href={`/${collection}#${encodeURIComponent(tag)}`}
+            class="text-xs py-0.5 px-2 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75 hover:bg-black/10 dark:hover:bg-white/30 transition-colors"
+          >
+            {tag}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
   {
     (demoUrl || repoUrl) && (
       <div class="mt-4 flex flex-wrap gap-2">
