@@ -5,7 +5,7 @@ import TopLayout from "@layouts/TopLayout.astro";
 import BottomLayout from "@layouts/BottomLayout.astro";
 import ArticleTopLayout from "@layouts/ArticleTopLayout.astro";
 import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro";
-import { stat } from "fs/promises";
+import { execSync } from "child_process";
 import path from "path";
 
 // Create the static blog pages
@@ -22,23 +22,42 @@ type Props = CollectionEntry<"blog">;
 const post = Astro.props;
 const { title, summary } = post.data;
 
-// Get file modification time
+// Get file creation and modification time from Git
 const contentDir = path.join(process.cwd(), "src/content/blog", post.slug);
 const indexFile = path.join(contentDir, "index.md");
+const relativeFilePath = path.relative(process.cwd(), indexFile);
+let createdDate = post.data.date;
 let modifiedDate = post.data.date;
 
 try {
-  const stats = await stat(indexFile);
-  modifiedDate = new Date(stats.mtime);
+  // Get the date of the first commit for this file
+  const firstCommitDate = execSync(
+    `git log --follow --format=%aI --reverse "${relativeFilePath}" | head -1`,
+    { encoding: "utf-8" }
+  ).trim();
+
+  // Get the date of the last commit for this file
+  const lastCommitDate = execSync(
+    `git log --format=%aI -n 1 "${relativeFilePath}"`,
+    { encoding: "utf-8" }
+  ).trim();
+
+  if (firstCommitDate) {
+    createdDate = new Date(firstCommitDate);
+  }
+
+  if (lastCommitDate) {
+    modifiedDate = new Date(lastCommitDate);
+  }
 } catch (error) {
-  console.warn(`Could not read file stats for ${indexFile}`);
+  console.warn(`Could not read git history for ${indexFile}:`, error);
 }
 ---
 
 <PageLayout title={title} description={summary}>
   <TopLayout>
     <div class="animate">
-      <ArticleTopLayout entry={post} modifiedDate={modifiedDate} />
+      <ArticleTopLayout entry={post} createdDate={createdDate} modifiedDate={modifiedDate} />
     </div>
   </TopLayout>
   <BottomLayout>

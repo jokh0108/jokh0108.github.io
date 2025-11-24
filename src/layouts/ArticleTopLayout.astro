@@ -4,13 +4,13 @@ import { formatDate, readingTime } from "@lib/utils";
 
 type Props = {
   entry: CollectionEntry<"projects"> | CollectionEntry<"blog">;
+  createdDate?: Date;
   modifiedDate?: Date;
 };
 
-const { entry, modifiedDate } = Astro.props;
+const { entry, createdDate, modifiedDate } = Astro.props;
 const { collection, data, body } = entry;
 const { title, summary, date } = data;
-const displayDate = modifiedDate || date;
 
 const demoUrl = collection === "projects" ? data.demoUrl : null;
 const repoUrl = collection === "projects" ? data.repoUrl : null;
@@ -79,18 +79,20 @@ const repoUrl = collection === "projects" ? data.repoUrl : null;
         <use href="/ui.svg#calendar"></use>
       </svg>
       <div>
-        생성일: {formatDate(date)}
+        발행일: {formatDate(createdDate || date)}
       </div>
     </div>
     {
-      modifiedDate && modifiedDate.getTime() !== date.getTime() && (
-        <div class="flex items-center gap-2">
-          <svg class="size-5 stroke-current">
-            <use href="/ui.svg#calendar" />
-          </svg>
-          <div>수정일: {formatDate(modifiedDate)}</div>
-        </div>
-      )
+      modifiedDate &&
+        createdDate &&
+        modifiedDate.getTime() !== createdDate.getTime() && (
+          <div class="flex items-center gap-2">
+            <svg class="size-5 stroke-current">
+              <use href="/ui.svg#calendar" />
+            </svg>
+            <div>최종 업데이트: {formatDate(modifiedDate)}</div>
+          </div>
+        )
     }
   </div>
   {
