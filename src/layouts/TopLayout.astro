@@ -1,9 +1,19 @@
 ---
 import Container from "@components/Container.astro";
+import TableOfContents from "@components/TableOfContents.tsx";
 ---
 
 <div class="pt-36 pb-5">
   <Container size="md">
     <slot />
+  </Container>
+</div>
+
+{/* Mobile TOC - shown on top */}
+<div class="toc:hidden">
+  <Container size="md">
+    <div class="mb-8 p-4 bg-black/5 dark:bg-white/10 rounded-lg">
+      <TableOfContents client:load />
+    </div>
   </Container>
 </div>
