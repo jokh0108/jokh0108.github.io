@@ -25,3 +25,14 @@ src/content/1-projects/
 src/content/2-area/
 src/content/3-resources/
 src/content/4-archives/
+
+# Obsidian
+.obsidian/
+src/content/.obsidian/
+
+# Claude Code
+.claude/
+
+# IDE settings
+.vscode/
+
